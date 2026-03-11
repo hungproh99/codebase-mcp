@@ -1,0 +1,43 @@
+[package]
+name = "codebase-mcp"
+version = "0.1.0"
+edition = "2024"
+license = "Apache-2.0"
+description = "High-performance MCP server for filesystem and code intelligence workflows"
+readme = "README.md"
+
+[dependencies]
+anyhow = "1.0.102"
+async-trait = "0.1.89"
+bytecount = "0.6.9"
+dashmap = "6.1.0"
+encoding_rs = "0.8.35"
+flate2 = "1.1.9"
+futures = "0.3.32"
+fuzzy-matcher = "0.3.7"
+git2 = "0.20.4"
+glob = "0.3.3"
+grep-regex = "0.1.14"
+grep-searcher = "0.1.16"
+ignore = "0.4.25"
+lazy_static = "1.5.0"
+mcp-sdk = "0.0.3"
+notify = "8.2.0"
+regex = "1.12.3"
+rusqlite = { version = "0.37.0", features = ["bundled"] }
+serde = { version = "1.0.228", features = ["derive"] }
+serde_json = "1.0.149"
+similar = "2.7.0"
+tar = "0.4.44"
+tokio = { version = "1.49.0", features = ["full"] }
+tracing = "0.1.44"
+tracing-subscriber = "0.3.22"
+tree-sitter = "0.26.6"
+tree-sitter-javascript = "0.25.0"
+tree-sitter-python = "0.25.0"
+tree-sitter-rust = "0.24.0"
+tree-sitter-typescript = "0.23.2"
+zip = "8.1.0"
+
+[dev-dependencies]
+tempfile = "3.26.0"
